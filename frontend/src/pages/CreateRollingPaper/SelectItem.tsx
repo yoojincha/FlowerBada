@@ -372,8 +372,6 @@ const modal = css`
 const StoreDiv = css`
   width: 100vw;
   height: 100vw;
-  min-height: -webkit-fill-available;
-  max-height: -webkit-fill-available;
 `;
 
 const points = css`
