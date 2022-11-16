@@ -112,6 +112,7 @@ export default function Message(props: {
           .catch((err) => {
             MySwal.fire({
               title: '신고 접수를 실패하였습니다.',
+              html: `로그인이 되어있는지 확인하세요 😥`,
               icon: 'warning',
               confirmButtonColor: '#16453e',
               confirmButtonText: '확인',
