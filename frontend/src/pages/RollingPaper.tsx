@@ -45,6 +45,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import Kakao from '@assets/kakaoTalk2.png';
 import { Edit } from '@mui/icons-material';
 import { styled } from '@mui/material/styles';
+import '@components/SweetAlert.css';
 
 export interface IRolling {
   rollingId?: number;
@@ -745,7 +746,7 @@ export default function RollingPaper(props: any) {
           ) : null}
         </>
       ) : (
-        <div css={Loading}>로딩중</div>
+        <div css={Loading}></div>
       )}
     </>
   );
@@ -1235,6 +1236,9 @@ const Dot = css`
 // `;
 
 const Loading = css`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
 `;
 
