@@ -307,6 +307,7 @@ export default function RollingPaper(props: any) {
       });
     } else {
       if (window.innerWidth >= 500) {
+        console.log(window.innerWidth);
         setLeft((window.innerWidth - 500) / 2 + 'px');
       } else {
         setLeft('0px');
@@ -329,16 +330,17 @@ export default function RollingPaper(props: any) {
   };
 
   const closePrintModal = () => {
-    if (userState.jwt === '') {
-      MySwal.fire({
-        title: '로그인 후<br/>사용 가능합니다!',
-        icon: 'warning',
-        confirmButtonColor: '#16453e',
-        confirmButtonText: '확인',
-      });
-    } else {
-      setColor(false);
-    }
+    setColor(false);
+    // if (userState.jwt === '') {
+    //   MySwal.fire({
+    //     title: '로그인 후<br/>사용 가능합니다!',
+    //     icon: 'warning',
+    //     confirmButtonColor: '#16453e',
+    //     confirmButtonText: '확인',
+    //   });
+    // } else {
+    //   setColor(false);
+    // }
   };
 
   const sendDelivery = () => {
