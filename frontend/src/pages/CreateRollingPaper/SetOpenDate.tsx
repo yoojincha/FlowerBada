@@ -21,7 +21,7 @@ export default function SetOpenDate() {
 
   const today = new Date(utc + KR_TIME_DIFF);
   const tomorrow = new Date(utc + KR_TIME_DIFF);
-  console.log(today);
+  // console.log(today);
 
   tomorrow.setDate(today.getDate() + 1);
   const navigate = useNavigate();
@@ -56,6 +56,7 @@ export default function SetOpenDate() {
       day = '0' + day;
     }
     let localDateTime = year + '-' + month + '-' + day + 'T00:00';
+
     try {
       const res: any = await rollingAPI.makeRolling(
         userState.jwt,
@@ -161,7 +162,7 @@ export default function SetOpenDate() {
         />
       </div>
       <button onClick={handleRollingLink} css={CreateButton}>
-        롤페 생성
+        롤링페이퍼 생성
       </button>
     </div>
   );

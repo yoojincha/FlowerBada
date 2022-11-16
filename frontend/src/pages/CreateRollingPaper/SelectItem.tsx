@@ -468,6 +468,7 @@ const GridStyle = css`
   height: 30vw;
 
   .item_image {
+    cursor: pointer;
     width: 20vw;
     position: absolute;
     margin-top: 3vw;
@@ -479,6 +480,7 @@ const GridStyle = css`
     cursor: pointer;
   }
   .locked_image {
+    cursor: pointer;
     z-index: 2;
     width: 25vw;
     opacity: 100%;
