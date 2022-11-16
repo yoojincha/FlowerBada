@@ -511,6 +511,7 @@ const GridStyle = css`
 
 const BuyButton = (isOwned: boolean) => css`
   position: relative;
+  margin-top: 70px;
   margin-bottom: 20px;
   top: 10px;
   left: 0;
