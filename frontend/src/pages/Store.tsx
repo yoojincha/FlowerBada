@@ -475,10 +475,6 @@ const GridStyle = css`
     cursor: pointer;
   }
 
-  .item_image:hover {
-    background-color: #cbe9cd;
-  }
-
   .locked_image {
     z-index: 2;
     width: 25vw;
