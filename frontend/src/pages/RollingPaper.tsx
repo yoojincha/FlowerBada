@@ -307,7 +307,6 @@ export default function RollingPaper(props: any) {
       });
     } else {
       if (window.innerWidth >= 500) {
-        console.log(window.innerWidth);
         setLeft((window.innerWidth - 500) / 2 + 'px');
       } else {
         setLeft('0px');
